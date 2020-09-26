@@ -54,9 +54,9 @@
   <script>
     let table = document.body.firstElementChild;
     //loop through the table collection and check if the the row index number is same as the table cell index number so it can switch the color
-    for (let tableRow of table.rows) {
-        for (let tableCell of tableRow.cells) {
-            if (tableRow.rowIndex == tableCell.cellIndex) {
+    for (const tableRow of table.rows) {
+        for (const tableCell of tableRow.cells) {
+            if (tableRow.rowIndex === tableCell.cellIndex) {
                 tableCell.style.backgroundColor = "red";
             }
         }
